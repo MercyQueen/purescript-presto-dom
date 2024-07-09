@@ -286,6 +286,7 @@ function removeViewFromNameSpace (namespace, id) {
 function hideViewInNameSpace (id, namespace) {
   // Return callback to hide screens
   return function () {
+    console.log("Inside hideViewInNameSpace --------------------", id, namespace);
     var __visibility = window.__OS == "IOS" ? "invisible" : "gone";
     var prop = {
       id: id,
